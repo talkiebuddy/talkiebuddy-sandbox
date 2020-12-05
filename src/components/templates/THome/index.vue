@@ -1,0 +1,10 @@
+<template>
+	<textarea
+		:class="classes"
+		:value="value"
+		@input="handleChange"
+		:state="state"
+		:size="size"
+		:trim="trim"
+	></textarea>
+</template>

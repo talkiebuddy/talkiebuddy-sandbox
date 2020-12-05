@@ -1,10 +1,10 @@
 import { storyFactory } from '~storybook/util/helpers'
 import { action } from '@storybook/addon-actions'
-import AButton from './index.vue'
+import MButton from './index.vue'
 
 export default storyFactory({
-  title: 'Atom/Button',
-  component: AButton,
+  title: 'Molecule/Button',
+  component: MButton,
   description: 'The completed documentation will sooner release. This docs is about Button Atom',
   argTypes: {
     backgroundColor: { control: 'color' },
@@ -48,8 +48,8 @@ export default storyFactory({
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
-  components: { AButton },
-  template: '<a-button @onClick="action" v-bind="$props"/>',
+  components: { MButton },
+  template: '<m-button @onClick="action" v-bind="$props"/>',
   methods: { action: action('clicked') }
 });
 

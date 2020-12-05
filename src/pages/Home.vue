@@ -14,6 +14,7 @@
 		<a-image></a-image>
 		<a-icon name="twitter" size="large"></a-icon>
 		<m-nav-list :list="list"></m-nav-list>
+		<a-input></a-input>
 	</div>
 </template>
 
@@ -30,10 +31,11 @@ const listRoute = [
 	}
 ]
 // @ is an alias to /src
-import AButton from '@/components/atoms/AButton'
-import AImage from '@/components/atoms/AImage'
-import AIcon from '@/components/atoms/AIcon'
+import AButton from '@/components/molecules/MButton'
+import AImage from '@/components/atoms/images/AImage'
+import AIcon from '@/components/atoms/images/AIcon'
 import MNavList from '@/components/molecules/MNavList'
+import AInput from '@/components/atoms/forms/AInput'
 
 export default {
 	name: 'Home',
@@ -41,7 +43,8 @@ export default {
 		AButton,
 		AImage,
 		AIcon,
-		MNavList
+		MNavList,
+		AInput
 	},
 	data() {
 		return {
@@ -50,4 +53,3 @@ export default {
 	}
 }
 </script>
-

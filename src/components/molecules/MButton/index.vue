@@ -11,7 +11,7 @@
 		@click="onClick"
 		:style="style"
 	>
-		<span class="a-button__label">
+		<span class="m-button__label">
 			<slot>
 				{{ label }}
 			</slot>
@@ -53,14 +53,14 @@ export default {
 		},
 		classes() {
 			return {
-				'a-button': true,
-				'a-button--primary': this.primary,
-				'a-button--secondary': this.secondary,
-				'a-button--disabled': this.disabled,
-				'a-button--success': this.success,
-				'a-button--error': this.error,
-				'a-button--warning': this.warning,
-				[`a-button--${this.size}`]: true,
+				'm-button': true,
+				'm-button--primary': this.primary,
+				'm-button--secondary': this.secondary,
+				'm-button--disabled': this.disabled,
+				'm-button--success': this.success,
+				'm-button--error': this.error,
+				'm-button--warning': this.warning,
+				[`m-button--${this.size}`]: true,
 			};
 		},
 		tag() {
